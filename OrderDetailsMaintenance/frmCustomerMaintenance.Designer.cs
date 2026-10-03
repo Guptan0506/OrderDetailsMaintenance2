@@ -186,7 +186,7 @@
             Controls.Add(label1);
             Margin = new Padding(6);
             Name = "frmCustomerMaintenance";
-            Text = "Customer Maintenance";
+            Text = "Navya Gupta's Customer Maintenance";
             ResumeLayout(false);
             PerformLayout();
 
