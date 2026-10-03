@@ -8,6 +8,7 @@
             get => title;
             set => title = value;
         }
+        //Navya Gupta
 
         public static bool IsPresent(TextBox textBox)
         {
@@ -19,6 +20,7 @@
             }
             return true;
         }
+        //Navya Gupta
 
         public static bool IsDecimal(TextBox textBox)
         {
@@ -35,6 +37,8 @@
             }
         }
 
+        //Navya Gupta
+
         public static bool IsInt32(TextBox textBox)
         {
             int number = 0;
@@ -49,6 +53,8 @@
                 return false;
             }
         }
+
+        //Navya Gupta
 
         public static bool IsWithinRange(TextBox textBox, decimal min, decimal max)
         {

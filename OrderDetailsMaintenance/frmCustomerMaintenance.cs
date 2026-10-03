@@ -5,11 +5,14 @@ namespace OrderDetailsMaintenance
     public partial class frmCustomerMaintenance : Form
     {
         private NorthwindContext _context = new NorthwindContext();
-
+        
+        //Navya Gupta
         public frmCustomerMaintenance()
         {
             InitializeComponent();
         }
+
+        //Navya Gupta
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -25,10 +28,14 @@ namespace OrderDetailsMaintenance
             _context.SaveChanges();
         }
 
+        //Navya Gupta
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+        //Navya Gupta
 
         private void btnFind_Click(object sender, EventArgs e)
         {
