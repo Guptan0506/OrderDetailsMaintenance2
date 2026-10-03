@@ -62,6 +62,7 @@
             btnFind.TabIndex = 5;
             btnFind.Text = "&Find";
             btnFind.UseVisualStyleBackColor = true;
+            btnFind.Click += btnFind_Click;
             // 
             // btnExit
             // 
@@ -186,7 +187,6 @@
             Margin = new Padding(6);
             Name = "frmCustomerMaintenance";
             Text = "Customer Maintenance";
-            Load += frmCustomerMaintenance_Load;
             ResumeLayout(false);
             PerformLayout();
 
