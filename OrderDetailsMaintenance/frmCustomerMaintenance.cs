@@ -19,6 +19,12 @@ namespace OrderDetailsMaintenance
             string id = txtCustomerId.Text;
             var customer = _context.Customers.Find(id);
 
+            if (customer == null)
+            {
+                MessageBox.Show($"Not found");
+                return;
+            }
+
             customer.ContactName = txtContact.Text;
             customer.Address = txtAddress.Text;
             customer.City = txtAddress.Text;
@@ -41,6 +47,13 @@ namespace OrderDetailsMaintenance
         {
             string id = txtCustomerId.Text;
             var customer = _context.Customers.Find(id);
+
+            if (customer == null)
+            {
+                MessageBox.Show($"Not found");
+                return;
+            }
+
             txtCustomerId.Text = customer.CustomerId;
             txtAddress.Text = customer.Address;
             txtCity.Text = customer.City;
